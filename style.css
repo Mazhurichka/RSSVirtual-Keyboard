@@ -1,0 +1,77 @@
+:root {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: rgba(35, 15, 15, 0.8);
+}
+
+.main-title {
+  margin: 100px auto;
+  font-size: 42px;
+  text-align: center;
+  color: rgba(244, 242, 242, 0.8);
+}
+
+.textarea {
+  margin-bottom: 100px;
+  resize: none;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 0;
+  border-radius: 20px;
+}
+
+.textarea:focus {
+  border: 3px solid rgba(35, 15, 15, 1);
+}
+
+.keyboard {
+  margin: 0 auto 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1075px;
+  border: 2px solid rgba(35, 15, 15, 1);
+  border-radius: 20px;
+  background-color: rgba(242, 244, 244, 0.8);
+}
+
+.key {
+  padding: 10px 25px;
+  margin: 5px;
+  border: 2px solid rgba(35, 15, 15, 1);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 7px rgba(128, 43, 43, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.key.active {
+  box-shadow: 0px 0px transparent;
+  color: rgb(191, 164, 164);
+}
+
+.active {
+  background-color: rgb(51, 28, 28);
+}
+
+.clearfix {
+  width: 100%;
+  display: block;
+  clear: box;
+}
+
+.content {
+  margin-bottom: 50px;
+  text-align: center;
+}
